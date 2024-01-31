@@ -1,0 +1,103 @@
+.sec{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.animated-text{
+    font-size: 2rem;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    font-size: 3rem;
+    width: 50%;
+    margin: auto;
+    position: relative;
+
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #000000;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "HTML & CSS";
+    }
+    21%,40%{
+        content: "ReactJs";
+    }
+    41%,60%{
+        content: "Core Java";
+    }
+    61%,80%{
+        content: "OOPS";
+    }
+    81%,100%{
+        content: "Data Structures";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+
+@media(max-width:700px){
+    *{
+        margin: 0px;
+        padding: 0;
+        /* box-sizing: border-box; */
+      }
+      .animated-text{
+
+        font-size: 1.7rem;
+        font-weight: 600;
+        width: 370px;
+    }
+      .sec{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+}

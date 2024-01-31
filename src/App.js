@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Header from "./components/header.js";
+import Main from "./components/Main.js";
+import Section from "./components/Section";
+import Contact from "./components/contact.js";
+import CardContainer from "./components/CardContainer.js";
+// import BgImg from "./components/pexels-pixabay-356056.jpg"
+ 
+function App(){
+  return(
+    <div className="App_con">
+      
+      <Header />
+      
+      
+      <div className="intro">
+      <Main />
+      </div>
+      
+      
+      <Section />
+      <CardContainer />
+      <div className="contactMe">
+        <Contact />
+      </div>
+      
     </div>
   );
 }
