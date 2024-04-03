@@ -1,10 +1,6 @@
 import React from "react";
 import './styles/header.css';
-// import { NavLink,Routes,Route, BrowserRouter} from "react-router-dom";
 import logo from "./GJ-logos_white.png";
-// import Section from "./Section";
-// import Contact from "./contact";
-// import Main from "./Main";
 
 const Header = () => {
     return(

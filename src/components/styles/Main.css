@@ -3,6 +3,8 @@
     margin-left: 5%;
 }
 .main .text{
+    /* color: #ff7f50; */
+
     margin-top: 17%;
     font-size: 2rem;
     color: rgb(224, 215, 215);
@@ -15,11 +17,22 @@
     clip-path: circle(40% at 48% 40%);
 }
 .main_content .text .icons{
-    color: white;
+    color: #ff7f50;
     text-decoration:none;
     display: flex;
     width: 35%;
     justify-content: space-between;
+}
+
+.text .icon-link svg{
+    height: 45px;
+    width: 45px;
+    padding: 3px;
+}
+
+.text .icon-link svg:hover{
+    border-radius: 50px;
+    background-color: white;
 }
 .icon-link {
     color: inherit; 
@@ -28,6 +41,7 @@
     cursor: pointer;
   }
 .main{
+    height: 500px;
     justify-content: space-between;
     padding-top: 20px;
     display: flex;

@@ -3,17 +3,19 @@
     padding: 0;
     background-color: #000000;
     color: #fff;
-    height: 100vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
+    
 }
 
 .animated-text{
     font-size: 2rem;
     font-weight: 600;
     min-width: 280px;
+    margin-bottom: 40px;
 }
 
 .animated-text span{
@@ -38,7 +40,7 @@
     background-color: #000000;
     border-left: 2px solid #ff7f50;
     right: -8px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    animation: cursor .6s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
@@ -82,6 +84,7 @@
         /* box-sizing: border-box; */
       }
       .animated-text{
+        margin-top: 30%;
 
         font-size: 1.7rem;
         font-weight: 600;
@@ -100,4 +103,10 @@
         font-family: "Montserrat", sans-serif;
     }
     
+}
+
+@media(max-width:40px){
+    .animated-text{
+        margin-top: 30%;
+    }
 }

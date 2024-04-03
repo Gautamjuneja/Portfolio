@@ -6,11 +6,11 @@
 .intro{
   margin: 0;
   padding: 0;
-  background: url(D:\projects\portfolio\portfolio\public\Coal.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+  background: black; 
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; 
+  background-size: cover;  */
    
   
 }
